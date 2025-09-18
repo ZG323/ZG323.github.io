@@ -1,0 +1,25 @@
+:root {
+    --text: #050315;
+    --background: #FFFCEB;
+    --primary: #848B79;
+    --secondary: #023020;
+    --accent: #355E3B;
+}
+
+body {
+    color: var(--text);
+    background: var(--background);
+    font-family: "Roboto Flex";
+}
+h1 {
+    color: var(--secondary);
+}
+h2 {
+    color: var(--accent);
+}
+h3 {
+    color: var(--primary);
+}
+li {
+    color: var(--secondary);
+}
