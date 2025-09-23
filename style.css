@@ -16,10 +16,18 @@ h1 {
 }
 h2 {
     color: var(--accent);
+    font-weight: 450;
 }
 h3 {
-    color: var(--primary);
+    color: var(--secondary);
+    font-weight: 400;
 }
 li {
     color: var(--secondary);
+}
+ol {
+    font-size: large;
+}
+h1 {
+    font-weight: 600;
 }
