@@ -74,7 +74,7 @@
     </section>
 
     <script>
-    
+
         const nameInput = document.getElementById("nameInput");
         const ageInput = document.getElementById("ageInput");
         const btnGreet = document.getElementById("btnGreet");
@@ -83,34 +83,37 @@
         btnGreet.addEventListener("click", () => {
             let name = nameInput.value;
             let age = ageInput.value;
-            greetingOutput.textContent = "Hello " + name + ", you are " + age +  " years old! ";
-           if (age < 13) {
-            greetingOutput.textContent = "You're just a Kid!"
-           }
+            greetingOutput.textContent = "Hello " + name + ", you are " + age + " years old! ";
+            if (age < 13) {
+                greetingOutput.textContent = "You're just a Kid!"
+            }
         });
 
         const colorInput = document.getElementById("colorInput");
         const volumeInput = document.getElementById("volumeInput");
         const colorOutput = document.getElementById("colorOutput");
 
-        function updateColorandValue(){
-           let color = colorInput.value;
-           let value = volumeInput.value; 
+        function updateColorandValue() {
+            const volume = volumeInput.value;
+            const color = colorInput.value;
             colorInput.style.backgroundColor = color;
-           colorOutput.textContent = "color" + color + " volume" + volume;
+            colorOutput.textContent = "color" + color + " volume" + volume ;
         }
+        colorInput.addEventListener("input", updateColorandValue)
 
 
         // --- PART 3 ---
         const subscribeBox = document.getElementById("subscribeBox");
         const btnSubmit = document.getElementById("btnSubmit");
         const modeOutput = document.getElementById("modeOutput");
-        const lightmode = document.getElementById ("lightmode")
-        const darkmode = document.getElementById ("darkmode")
-        const systemid= document.getElementById ("systemid")
+        const lightmode = document.getElementById("lightmode")
+        const darkmode = document.getElementById("darkmode")
+        const systemid = document.getElementById("systemid")
 
         btnSubmit.addEventListener("click", () => {
-             if (lightmode)
+            if (lightmode) {
+
+            }
             // TODO: Find which radio button is checked and display it.
             // Challenge: Include whether the user subscribed or not.
         });
