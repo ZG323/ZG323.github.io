@@ -25,10 +25,24 @@
     <p>Camping is a very good way to explore nature, and learn about when you have it first hand, to learn more you
         can click <a href="camping.html">"Camping"</a>
     </p>
-    <p>this sentence is to test the <a href="ballontest.html">events</a></p>
-
-    <p id="ballon"></p>
-
+   
+    <p id="balloon">🎈</p>
+    
+    <script>
+        let balloonEl = document.getElementById("balloon");
+        let fontSize= 10;
+        function handlekeydown(event) {
+            if(event.key="Arrowup") {
+                fontSize *=1.1;
+                balloonEl.style.fontSize = fontSize + "px";
+            }
+            if (event.key == "ArrowDown") {
+                fontSize /= 1.1;
+                balloonEl.style.fontSize = fontSize + "px"
+                event.preventDefault();
+            }
+        }
+        window.addEventListener ("keydown", handlekeydown)
+      </script>
 </body>
-
 </html>
