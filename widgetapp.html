@@ -3,11 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Widget</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>Madlibs</h1>
+    <h2>Follow these steps</h2>
+    <p>Step one: write out a noun</p>
+
+    <p>Step two: write out a verb</p>
+    <p>Step three : generate the sentence</p>
+    <label>
+            noun:
+            <input id="nounInput" type="text" placeholder="Enter noun">
+        </label>
+        <label>
+            verb:
+            <input id="verbInput" type="text" placeholder="Enter Verb">
+        </label>
+        <div class="output" id="sentenceOutput"></div>
+        <button id="btnGenerate">generate a sentence!</button>
     <script>
+        const nounInput = document.getElementById("nounInput");
+        const verbInput = document.getElementById("verbInput");
+        const btnGenerate = document.getElementById("btnGenerate");
+        const sentenceOutput = document.getElementById("greetingOutput");
+        
+        function btnGenerate.addEventListener 
 
     </script>
 </body>

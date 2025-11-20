@@ -44,3 +44,7 @@ img {
 p {
     color: var(--secondary);
 }
+
+label {
+    color: var(--secondary)
+}
