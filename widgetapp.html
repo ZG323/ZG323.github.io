@@ -24,8 +24,9 @@
             action:
             <input id="actionInput" type="text" placeholder="Enter Verb">
         </label>
-        <div class="output" id="sentenceOutput"></div>
         <button id="btnGenerate">generate a sentence!</button>
+        <div class="output" id="sentenceOutput"></div>
+
     <script>
         const nameInput = document.getElementById("nameInput");
         const actionInput = document.getElementById("actionInput");
@@ -35,7 +36,7 @@
     btnGenerate.addEventListener ("click", () => {
         let name = nameInput.value;
         let action = actionInput.value;
-        sentenceOutput.textContent = name + action + "to the store!"
+        sentenceOutput.textContent = name + action + "to the store!";
         if (action = "walked") {
             sentenceOutput.textContent = "Run! before the turkey runs out"
         }
