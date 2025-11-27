@@ -17,23 +17,32 @@
     <p>Step two: write out a verb</p>
     <p>Step three : generate the sentence</p>
     <label>
-            noun:
-            <input id="nounInput" type="text" placeholder="Enter noun">
+            name:
+            <input id="nameInput" type="text" placeholder="Enter noun">
         </label>
         <label>
-            verb:
-            <input id="verbInput" type="text" placeholder="Enter Verb">
+            action:
+            <input id="actionInput" type="text" placeholder="Enter Verb">
         </label>
         <div class="output" id="sentenceOutput"></div>
         <button id="btnGenerate">generate a sentence!</button>
     <script>
-        const nounInput = document.getElementById("nounInput");
-        const verbInput = document.getElementById("verbInput");
+        const nameInput = document.getElementById("nameInput");
+        const actionInput = document.getElementById("actionInput");
         const btnGenerate = document.getElementById("btnGenerate");
         const sentenceOutput = document.getElementById("greetingOutput");
         
-        function btnGenerate.addEventListener 
-
-    </script>
+    btnGenerate.addEventListener ("click", () => {
+        let name = nameInput.value;
+        let action = actionInput.value;
+        sentenceOutput.textContent = name + action + "to the store!"
+        if (action = "walked") {
+            sentenceOutput.textContent = "Run! before the turkey runs out"
+        }
+     }); 
+        
+        
+        
+ </script>
 </body>
 </html>
