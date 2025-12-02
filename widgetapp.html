@@ -13,15 +13,15 @@
     <h1>Madlibs</h1>
     <h2>Follow these steps</h2>
     <p>Step one: write out your name</p>
-    <p>Step two: write out an action, examples: Ran, Walked, flew, or swam.</p>
+    <p>Step two: choose your action : ran, walked, flew, or swam.</p>
     <p>Step three : generate the sentence</p>
     <label>
             name:
-            <input id="nameInput" type="text" placeholder="Enter noun">
+            <input id="nameInput" type="text" placeholder="Enter your name">
         </label>
         <label>
             action:
-            <input id="actionInput" type="text" placeholder="Enter Verb">
+            <input id="actionInput" type="text" placeholder="Enter Action">
         </label>
         <button id="btnGenerate">generate a sentence!</button>
         <div class="output" id="sentenceOutput"></div>
@@ -34,8 +34,21 @@
         
     btnGenerate.addEventListener ("click", () => {
         let name = nameInput.value;
-        let action = actionInput.value;
-        sentenceOutput.textContent = name + " " + action + " to the store!";
+        let action = actionInput.value.toLowerCase();
+        sentenceOutput.textContent =  name + ", " + "Didn't I say to choose one of the four?"
+       
+        if ( action == "ran") {
+            sentenceOutput.textContent = name + " " + "ran to the park! and...almost fell."
+        }
+        if ( action == "walked") {
+            sentenceOutput.textContent = "Be faster? C'mon!"
+        }
+        if ( action == "flew") {
+            sentenceOutput.textContent = name + " " + "is flying like superman apperntly."
+        }
+        if ( action == "swam") {
+            sentenceOutput.textContent = name + " " + " is swimming like a penguin."
+        }
 
      }); 
 
