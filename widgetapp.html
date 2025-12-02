@@ -23,7 +23,8 @@
             action:
             <input id="actionInput" type="text" placeholder="Enter Action">
         </label>
-        <button id="btnGenerate">generate a sentence!</button>
+        <button id="btnGenerate">Generate a Sentence!</button>
+        <button id="btnReset">Reset</button>
         <div class="output" id="sentenceOutput"></div>
 
     <script>
@@ -31,6 +32,7 @@
         const actionInput = document.getElementById("actionInput");
         const btnGenerate = document.getElementById("btnGenerate");
         const sentenceOutput = document.getElementById("sentenceOutput");
+        const btnReset = document.getElementById ("btnReset");
         
     btnGenerate.addEventListener ("click", () => {
         let name = nameInput.value;
@@ -50,12 +52,13 @@
             sentenceOutput.textContent = name + " " + " is swimming like a penguin."
         }
 
-     }); 
+     });
 
+     btnReset.addEventListener ("click", () => {
+        sentenceOutput.textContent = " "
+     });
 
-        
-        
-        
+     
  </script>
 </body>
 </html>
