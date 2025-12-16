@@ -27,6 +27,10 @@ h3 {
 
 li {
     color: var(--secondary);
+    font-size: large;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 50em;
 }
 
 ol {
@@ -39,12 +43,12 @@ h1 {
 }
 
 img {
-    border: 6px solid #023020;
+    border: 10px solid #023020;
 }
 
 p {
     color: var(--secondary);
-    font-size : x-large;
+    font-size : large;
 }
 
 label {
